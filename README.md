@@ -309,7 +309,3 @@ A: `vscode` 请安装项目推荐插件，或手动安装 `Eslint` 插件。
 Q: 前端没有打字机效果？
 
 A: 一种可能原因是经过 Nginx 反向代理，开启了 buffer，则 Nginx 会尝试从后端缓冲一定大小的数据再发送给浏览器。请尝试在反代参数后添加 `proxy_buffering off;`，然后重载 Nginx。其他 web server 配置同理。
-
-
-## License
-MIT © [ChenZhaoYu](./license)
